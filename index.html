@@ -3,47 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="/icon.png" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    />
     <script defer src="script.js"></script>
     <title>Customise umbrella</title>
   </head>
+
   <body>
-    <div class="sidebar">
-      <img src="./assets/Blue umbrella.png" alt="Umbrella" class="umbrella" id="umbrella-img"/>
+    <div class="image-container">
+      <img src="./assets/Blue umbrella.png" alt="Umbrella" id="umbrella-img" />
     </div>
 
     <div id="selection-container">
-      <h1>
-        Custom Umbrella
-      </h1>
-    <ul class="colour-options" id="colorOptions">
-    </ul>
-    <h3>Customise your umbrella</h3>
-    <h4>Upload a logo for an instant review</h4>
-    <h5>.png and .jpg file only. Max file size is 5MB</h5>
-<div class="upload-button">
-    <label for="file-upload" class="custom-file-upload">
-      <span class="icon"></span>
-      <span class = "button-text">Upload logo</span>
-  </label>
-  <input id="file-upload" type="file" style="display:none;" accept=".png, .jpg" >
-</input>
+      <div class="title">Custom Umbrella</div>
 
-  </div>
- 
-  </div>
+      <ul id="color-options"></ul>
 
+      <div class="heading">Customise your umbrella</div>
+      <div class="sub-heading1">Upload a logo for an instant review</div>
+      <div class="sub-heading2">
+        .png and .jpg file only. Max file size is 5MB
+      </div>
+
+      <div class="upload-button">
+        <label for="file-upload" class="custom-file-upload">
+          <span class="icon"></span>
+          <span class="button-text">Upload logo</span>
+        </label>
+
+        <input
+          id="file-upload"
+          type="file"
+          style="display: none; width: max-content"
+          accept=".png, .jpg"
+        />
+      </div>
     </div>
   </body>
 </html>
